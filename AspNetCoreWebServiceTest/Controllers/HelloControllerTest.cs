@@ -5,12 +5,19 @@ namespace AspNetCoreWebServiceTest.Controllers
 {
     public class HelloControllerTest
     {
+//        [Fact]
+//         public void NoInputParamGetResponseTest()
+//         {
+//             HelloController controller = new HelloController();
+//             var response = controller.Get().Value as Response;
+//             Assert.Equal("Hello World!", response.Output);
+//         }
         [Fact]
         public void NoInputParamGetResponseTest()
         {
             HelloController controller = new HelloController();
             var response = controller.Get().Value as Response;
-            Assert.Equal("Hello World!", response.Output);
+            Assert.Equal("Hello World!!!", response.output);
         }
 
         [Theory]
